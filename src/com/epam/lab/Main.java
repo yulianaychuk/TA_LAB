@@ -5,7 +5,8 @@ import com.epam.lab.Decorator.SingAnotherSong;
 import com.epam.lab.Decorator.SingSong;
 import com.epam.lab.Facade.Facade;
 import com.epam.lab.Factory.*;
-import com.epam.lab.Proxy.MainProxy;
+import com.epam.lab.Observer.ObserverDemo;
+import com.epam.lab.Prototype.PrototypeDemo;
 import com.epam.lab.Proxy.OfficeInternetAccess;
 import com.epam.lab.Proxy.ProxyInternetAccess;
 import com.epam.lab.Template.*;
@@ -24,6 +25,8 @@ public class Main {
                 "3 - Proxy Pattern \n" +
                 "4 - Facade Pattern \n" +
                 "5 - Decorator Pattern \n" +
+                "6 - Prototype Pattern \n" +
+                "7 - Observer Pattern \n" +
                 "Народ тут запишіть свій паттерн!");
 
         int counter = scanner.nextInt();
@@ -73,8 +76,12 @@ public class Main {
                 singSong.sing();
                 break;
             case 6:
+                PrototypeDemo prototype = new PrototypeDemo();
+                prototype.execute();
                 break;
             case 7:
+                ObserverDemo observer = new ObserverDemo();
+                observer.execute();
                 break;
             case 8:
                 break;
