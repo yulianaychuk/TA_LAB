@@ -1,5 +1,6 @@
 package com.epam.lab;
 
+import com.epam.lab.Adapter.AdapterView;
 import com.epam.lab.Decorator.Sing;
 import com.epam.lab.Decorator.SingAnotherSong;
 import com.epam.lab.Decorator.SingSong;
@@ -11,6 +12,7 @@ import com.epam.lab.Proxy.OfficeInternetAccess;
 import com.epam.lab.Proxy.ProxyInternetAccess;
 import com.epam.lab.Template.*;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -27,10 +29,11 @@ public class Main {
                 "5 - Decorator Pattern \n" +
                 "6 - Prototype Pattern \n" +
                 "7 - Observer Pattern \n" +
+                "8 - Adapter Pattern \n" +
                 "Народ тут запишіть свій паттерн!");
 
-        int counter = scanner.nextInt();
-
+        try {
+            int counter = scanner.nextInt();
         switch (counter) {
             case 1:
                 ExecuteFactory executeFactory = new ExecuteFactory();
@@ -43,13 +46,10 @@ public class Main {
                 System.out.println("-------Proxy Pattern-------");
                 System.out.println("There are banned sites abc.com, def.com,ijk.com,lnm.com");
                 OfficeInternetAccess internet = new ProxyInternetAccess();
-                try
-                {
+                try {
                     internet.connectTo("goverment.org");
                     internet.connectTo("abc.com");
-                }
-                catch (Exception e)
-                {
+                } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
                 break;
@@ -60,13 +60,12 @@ public class Main {
                 System.out.println("1 - Computer on \n" +
                         "2 - Computer off");
                 int facadeInt = facadeScanner.nextInt();
-                if (facadeInt == 1){
+                if (facadeInt == 1) {
                     facade.switchOn();
                 }
-                if (facadeInt == 2){
+                if (facadeInt == 2) {
                     facade.switchOff();
-                }
-                else {
+                } else {
                     System.out.println("You input incorrect value");
                 }
                 break;
@@ -84,6 +83,8 @@ public class Main {
                 observer.execute();
                 break;
             case 8:
+                System.out.println("-------Adapter Pattern-------");
+                AdapterView.adapterView();
                 break;
             case 9:
                 break;
@@ -107,6 +108,11 @@ public class Main {
                 break;
             case 19:
                 break;
+            default:
+                throw new InputMismatchException();
+        }
+        }catch(InputMismatchException e){
+            System.out.println("Wrong input. There is no such pattern(");
         }
     }
 }
