@@ -1,5 +1,6 @@
 package com.epam.lab;
 
+import com.epam.lab.Adapter.AdapterView;
 import com.epam.lab.Decorator.Sing;
 import com.epam.lab.Decorator.SingAnotherSong;
 import com.epam.lab.Decorator.SingSong;
@@ -27,6 +28,7 @@ public class Main {
                 "5 - Decorator Pattern \n" +
                 "6 - Prototype Pattern \n" +
                 "7 - Observer Pattern \n" +
+                "8 - Adapter Pattern \n" +
                 "Народ тут запишіть свій паттерн!");
 
         int counter = scanner.nextInt();
@@ -84,6 +86,8 @@ public class Main {
                 observer.execute();
                 break;
             case 8:
+                System.out.println("-------Adapter Pattern-------");
+                AdapterView.adapterView();
                 break;
             case 9:
                 break;
