@@ -24,7 +24,7 @@ public class Main {
         CrossCompiler android = new AndroidCompiler();
         android.crossCompile();
 
-        MainProxy mainProxy = new MainProxy();
+        ExecuteProxy mainProxy = new ExecuteProxy();
         mainProxy.execute();
     }
 }
