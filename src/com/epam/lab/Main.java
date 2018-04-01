@@ -1,19 +1,20 @@
 package com.epam.lab;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 import com.epam.lab.Adapter.AdapterView;
+import com.epam.lab.chainOfResponsibility.ChainOfResponsibilityDemo;
 import com.epam.lab.Decorator.Sing;
 import com.epam.lab.Decorator.SingAnotherSong;
 import com.epam.lab.Decorator.SingSong;
 import com.epam.lab.Facade.Facade;
-import com.epam.lab.Factory.*;
+import com.epam.lab.Factory.ExecuteFactory;
 import com.epam.lab.Observer.ObserverDemo;
 import com.epam.lab.Prototype.PrototypeDemo;
 import com.epam.lab.Proxy.OfficeInternetAccess;
 import com.epam.lab.Proxy.ProxyInternetAccess;
-import com.epam.lab.Template.*;
-
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import com.epam.lab.Template.ExecuteTemplate;
 
 public class Main {
 
@@ -30,6 +31,7 @@ public class Main {
                 "6 - Prototype Pattern \n" +
                 "7 - Observer Pattern \n" +
                 "8 - Adapter Pattern \n" +
+                "9 - Chain of Responsibility Pattern \n" +
                 "Народ тут запишіть свій паттерн!");
 
         try {
@@ -87,6 +89,8 @@ public class Main {
                 AdapterView.adapterView();
                 break;
             case 9:
+                System.out.println("-------Chain of Responsibility Pattern-------");
+                ChainOfResponsibilityDemo.main(args);
                 break;
             case 10:
                 break;
