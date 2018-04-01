@@ -4,6 +4,7 @@ import com.epam.lab.Factory.FactoryMethod;
 import com.epam.lab.Factory.Interviewer;
 import com.epam.lab.Factory.Junior;
 import com.epam.lab.Factory.Middle;
+import com.epam.lab.Proxy.MainProxy;
 import com.epam.lab.Proxy.OfficeInternetAccess;
 import com.epam.lab.Proxy.ProxyInternetAccess;
 import com.epam.lab.Template.AndroidCompiler;
@@ -23,17 +24,7 @@ public class Main {
         CrossCompiler android = new AndroidCompiler();
         android.crossCompile();
 
-        System.out.println("-------Proxy Pattern-------");
-        System.out.println("There are banned sites abc.com, def.com,ijk.com,lnm.com");
-        OfficeInternetAccess internet = new ProxyInternetAccess();
-        try
-        {
-            internet.connectTo("goverment.org");
-            internet.connectTo("abc.com");
-        }
-        catch (Exception e)
-        {
-            System.out.println(e.getMessage());
-        }
+        MainProxy mainProxy = new MainProxy();
+        mainProxy.execute();
     }
 }
