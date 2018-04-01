@@ -6,12 +6,9 @@ import com.epam.lab.Decorator.SingSong;
 import com.epam.lab.Facade.Facade;
 import com.epam.lab.Factory.FactoryMethod;
 import com.epam.lab.Factory.Interviewer;
-<<<<<<< HEAD
-=======
 import com.epam.lab.Factory.Junior;
 import com.epam.lab.Factory.Middle;
 import com.epam.lab.Proxy.MainProxy;
->>>>>>> 30b753997a6f8275d4adb12b50e80271e9f0fa09
 import com.epam.lab.Proxy.OfficeInternetAccess;
 import com.epam.lab.Proxy.ProxyInternetAccess;
 import com.epam.lab.Template.AndroidCompiler;
