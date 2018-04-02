@@ -1,8 +1,5 @@
 package com.epam.lab;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
 import com.epam.lab.AbstractFactory.Chair.Chair;
 import com.epam.lab.AbstractFactory.FactorySelector;
 import com.epam.lab.AbstractFactory.FurnitureFactory.FurnitureFactory;
@@ -10,22 +7,24 @@ import com.epam.lab.AbstractFactory.FurnitureType;
 import com.epam.lab.AbstractFactory.Sofa.Sofa;
 import com.epam.lab.AbstractFactory.Table.Table;
 import com.epam.lab.Adapter.AdapterView;
-import com.epam.lab.Proxy.ExecuteProxy;
-import com.epam.lab.chainOfResponsibility.ChainOfResponsibilityDemo;
 import com.epam.lab.Decorator.Sing;
 import com.epam.lab.Decorator.SingAnotherSong;
 import com.epam.lab.Decorator.SingSong;
 import com.epam.lab.Facade.Facade;
 import com.epam.lab.Factory.ExecuteFactory;
+import com.epam.lab.Mediator.StartClass;
 import com.epam.lab.Observer.ObserverDemo;
 import com.epam.lab.Prototype.PrototypeDemo;
-import com.epam.lab.Proxy.OfficeInternetAccess;
-import com.epam.lab.Proxy.ProxyInternetAccess;
+import com.epam.lab.Proxy.ExecuteProxy;
 import com.epam.lab.Template.ExecuteTemplate;
-import com.epam.lab.Mediator.StartClass;
+import com.epam.lab.chainOfResponsibility.ChainOfResponsibilityDemo;
+import com.epam.lab.composite.CompositeCommand;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
 public class Main {
 
-    final static Scanner scanner = new Scanner(System.in);
+    private final static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -41,6 +40,7 @@ public class Main {
                 "9 - Chain of Responsibility Pattern \n" +
                 "10 - Mediator Pattern \n" +
 				"11 - Abstract Factory \n" +
+                "12 - Composite Pattern \n" +
                 "Народ тут запишіть свій паттерн!");
 
         try {
@@ -112,6 +112,9 @@ public class Main {
                 sofa.name();
                 break;
             case 12:
+                System.out.println("-------Composite Pattern-------");
+                CompositeCommand compositeCommand = new CompositeCommand();
+                compositeCommand.execute();
                 break;
             case 13:
                 break;
