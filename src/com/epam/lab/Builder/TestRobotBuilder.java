@@ -1,6 +1,7 @@
 package com.epam.lab.builder;
 public class TestRobotBuilder emplements Command {
-	
+@Override
+	public void execute(){
 		RobotBuilder oldStyleRobot = new OldRobotBuilder();
 		RobotEngineer robotEngineer = new RobotEngineer(oldStyleRobot);
 		robotEngineer.makeRobot(); 
@@ -19,5 +20,6 @@ public class TestRobotBuilder emplements Command {
 		System.out.println("Head  Type: " + secondRobot.getRobotHead());
 		System.out.println("Torso Type: " + secondRobot.getRobotTorso());
 		System.out.println("Arms  Type: " + secondRobot.getRobotArms());
-		System.out.println("Legs  Type: " + secondRobot.getRobotLegs());	
+		System.out.println("Legs  Type: " + secondRobot.getRobotLegs());
+	}	
 }
