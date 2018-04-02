@@ -1,3 +1,4 @@
+package com.epam.lab.Mediator;
 public class Cannery extends Colleague {
     public Cannery(Mediator mediator) {
         super(mediator);
