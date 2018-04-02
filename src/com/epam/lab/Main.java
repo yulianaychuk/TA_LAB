@@ -96,7 +96,7 @@ public class Main {
             case 10:
                 System.out.println("-------Mediator Pattern-------");
                 StartClass startClass = new StartClass();
-                startClass.startMethod();
+                startClass.execute();
                 break;
             case 11:
                 break;
