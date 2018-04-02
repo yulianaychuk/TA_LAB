@@ -15,7 +15,7 @@ import com.epam.lab.Prototype.PrototypeDemo;
 import com.epam.lab.Proxy.OfficeInternetAccess;
 import com.epam.lab.Proxy.ProxyInternetAccess;
 import com.epam.lab.Template.ExecuteTemplate;
-
+import com.epam.lab.Mediator.StartClass;
 public class Main {
 
     final static Scanner scanner = new Scanner(System.in);
@@ -32,6 +32,7 @@ public class Main {
                 "7 - Observer Pattern \n" +
                 "8 - Adapter Pattern \n" +
                 "9 - Chain of Responsibility Pattern \n" +
+                "10 - Mediator Pattern \n" +
                 "Народ тут запишіть свій паттерн!");
 
         try {
@@ -93,6 +94,9 @@ public class Main {
                 ChainOfResponsibilityDemo.main(args);
                 break;
             case 10:
+                System.out.println("-------Mediator Pattern-------");
+                StartClass startClass = new StartClass();
+                startClass.startMethod();
                 break;
             case 11:
                 break;
