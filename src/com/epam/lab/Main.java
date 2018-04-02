@@ -40,7 +40,8 @@ public class Main {
                 "9 - Chain of Responsibility Pattern \n" +
                 "10 - Mediator Pattern \n" +
 				"11 - Abstract Factory \n" +
-                "12 - Composite Pattern \n" +
+                "12 - Composite Pattern \n" + 
+		"13 - Builder Pattern \n" +	   
                 "Народ тут запишіть свій паттерн!");
 
         try {
@@ -117,6 +118,9 @@ public class Main {
                 compositeCommand.execute();
                 break;
             case 13:
+		System.out.println("-------Builder Pattern-------");
+		TestRobotBuilder trb = new TestRobotBuilder();
+		trb.execute();	
                 break;
             case 14:
                 break;
