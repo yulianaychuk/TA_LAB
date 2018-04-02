@@ -1,4 +1,4 @@
-package com.epam.lab.builder;
+package com.epam.lab.Builder;
 public interface RobotPlan {
 	public void setRobotHead(String head);
 	public void setRobotTorso(String torso);
