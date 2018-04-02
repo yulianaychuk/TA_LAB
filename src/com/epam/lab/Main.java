@@ -10,6 +10,7 @@ import com.epam.lab.AbstractFactory.FurnitureType;
 import com.epam.lab.AbstractFactory.Sofa.Sofa;
 import com.epam.lab.AbstractFactory.Table.Table;
 import com.epam.lab.Adapter.AdapterView;
+import com.epam.lab.Proxy.ExecuteProxy;
 import com.epam.lab.chainOfResponsibility.ChainOfResponsibilityDemo;
 import com.epam.lab.Decorator.Sing;
 import com.epam.lab.Decorator.SingAnotherSong;
@@ -52,16 +53,10 @@ public class Main {
             case 2:
                 ExecuteTemplate executeTemplate = new ExecuteTemplate();
                 executeTemplate.execute();
+                break;
             case 3:
-                System.out.println("-------Proxy Pattern-------");
-                System.out.println("There are banned sites abc.com, def.com,ijk.com,lnm.com");
-                OfficeInternetAccess internet = new ProxyInternetAccess();
-                try {
-                    internet.connectTo("goverment.org");
-                    internet.connectTo("abc.com");
-                } catch (Exception e) {
-                    System.out.println(e.getMessage());
-                }
+                ExecuteProxy executeProxy = new ExecuteProxy();
+                executeProxy.execute();
                 break;
             case 4:
                 System.out.println("-------Facade Pattern-------");
