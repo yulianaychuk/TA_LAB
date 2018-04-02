@@ -1,4 +1,4 @@
-package com.epam.lab.builder;
+package com.epam.lab.Builder;
 public class Robot implements RobotPlan{
 	private String robotHead;
 	private String robotTorso;
