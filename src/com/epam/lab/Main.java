@@ -19,6 +19,7 @@ import com.epam.lab.Proxy.ExecuteProxy;
 import com.epam.lab.Template.ExecuteTemplate;
 import com.epam.lab.chainOfResponsibility.ChainOfResponsibilityDemo;
 import com.epam.lab.composite.CompositeCommand;
+import com.epam.lab.Builder.TestRobotBuilder;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
