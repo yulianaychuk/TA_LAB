@@ -1,4 +1,4 @@
-package com.epam.lab.builder;
+package com.epam.lab.Builder;
 public interface RobotBuilder {
 	public void buildRobotHead();
 	public void buildRobotTorso();
