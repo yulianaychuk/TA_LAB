@@ -1,4 +1,5 @@
-package com.epam.lab.builder;
+package com.epam.lab.Builder;
+import com.epam.lab.Command;
 public class TestRobotBuilder implements Command {
 @Override
 	public void execute(){
