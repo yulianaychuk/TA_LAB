@@ -1,5 +1,5 @@
 package com.epam.lab.builder;
-public class TestRobotBuilder emplements Command {
+public class TestRobotBuilder implements Command {
 @Override
 	public void execute(){
 		RobotBuilder oldStyleRobot = new OldRobotBuilder();
