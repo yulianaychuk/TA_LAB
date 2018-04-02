@@ -1,6 +1,6 @@
 package com.epam.lab.builder;
-public class TestRobotBuilder {
-	public static void main(String...args) {
+public class TestRobotBuilder emplements Command {
+	
 		RobotBuilder oldStyleRobot = new OldRobotBuilder();
 		RobotEngineer robotEngineer = new RobotEngineer(oldStyleRobot);
 		robotEngineer.makeRobot(); 
@@ -19,6 +19,5 @@ public class TestRobotBuilder {
 		System.out.println("Head  Type: " + secondRobot.getRobotHead());
 		System.out.println("Torso Type: " + secondRobot.getRobotTorso());
 		System.out.println("Arms  Type: " + secondRobot.getRobotArms());
-		System.out.println("Legs  Type: " + secondRobot.getRobotLegs());
-	}
+		System.out.println("Legs  Type: " + secondRobot.getRobotLegs());	
 }
