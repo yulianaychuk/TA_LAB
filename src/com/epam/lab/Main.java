@@ -3,6 +3,12 @@ package com.epam.lab;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import com.epam.lab.AbstractFactory.Chair.Chair;
+import com.epam.lab.AbstractFactory.FactorySelector;
+import com.epam.lab.AbstractFactory.FurnitureFactory.FurnitureFactory;
+import com.epam.lab.AbstractFactory.FurnitureType;
+import com.epam.lab.AbstractFactory.Sofa.Sofa;
+import com.epam.lab.AbstractFactory.Table.Table;
 import com.epam.lab.Adapter.AdapterView;
 import com.epam.lab.chainOfResponsibility.ChainOfResponsibilityDemo;
 import com.epam.lab.Decorator.Sing;
