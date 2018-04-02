@@ -1,3 +1,4 @@
+package com.epam.lab.Mediator;
 public class Farmer extends Colleague {
     public Farmer(Mediator mediator) {
         super(mediator);
