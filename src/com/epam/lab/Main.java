@@ -33,6 +33,7 @@ public class Main {
                 "8 - Adapter Pattern \n" +
                 "9 - Chain of Responsibility Pattern \n" +
                 "10 - Mediator Pattern \n" +
+				"11 - Abstract Factory \n" +
                 "Народ тут запишіть свій паттерн!");
 
         try {
@@ -99,6 +100,15 @@ public class Main {
                 startClass.execute();
                 break;
             case 11:
+			    System.out.println("-------Abstract Factory-------");
+                FactorySelector factorySelector = new FactorySelector();
+                FurnitureFactory furnitureFactory = factorySelector.getFactory(FurnitureType.MODERN);
+                Chair chair = furnitureFactory.createChair();
+                Table table = furnitureFactory.createTable();
+                Sofa sofa = furnitureFactory.createSofa();
+                chair.name();
+                table.name();
+                sofa.name();
                 break;
             case 12:
                 break;
