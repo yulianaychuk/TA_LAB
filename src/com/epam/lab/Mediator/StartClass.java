@@ -1,5 +1,5 @@
 package com.epam.lab.Mediator;
-package com.epam.lab;
+import com.epam.lab.Command;
 public class StartClass implements Command {
     @Override
     public  void execute(){
