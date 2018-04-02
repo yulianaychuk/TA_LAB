@@ -1,3 +1,4 @@
+package com.epam.lab.Mediator;
 import java.util.ArrayList;
 
 public class ConcreteMediator implements Mediator{
