@@ -1,4 +1,4 @@
-package com.epam.lab.builder;
+package com.epam.lab.Builder;
 public class NewRobotBuilder implements RobotBuilder{
 	private Robot robot;
 	public NewRobotBuilder() {
